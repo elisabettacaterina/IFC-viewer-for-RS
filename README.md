@@ -1,1 +1,1 @@
-# IFCviewer-for-RS
+# IFC-viewer-for-RS
