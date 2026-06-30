@@ -1,3 +1,42 @@
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="image/png" href="assets/images/3dviewer_net_favicon.ico">
+    <link rel="canonical" href="https://3dviewer.net">
+
+    <title>3D ARCH</title>
+
+    <link rel="stylesheet" type="text/css" href="o3dv/o3dv.website.min.css?v=0.19.0">
+    <script type="text/javascript" src="o3dv/o3dv.website.min.js?v=0.19.0"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZZ5ZTMBX5" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6ZZ5ZTMBX5');
+      OV.SetWebsiteEventHandler ((eventName, eventLabel, eventParams) => {
+        let params = {
+          event_label : eventLabel
+        };
+        if (eventParams !== undefined && eventParams !== null) {
+            for (let key in eventParams) {
+                if (Object.prototype.hasOwnProperty.call (eventParams, key)) {
+                    params[key] = eventParams[key];
+                }
+            }
+        }
+        gtag ('event', eventName, params);
+      });
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2841513414125344"
+         crossorigin="anonymous"></script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a3946125-bdfb-48ac-85ee-8d0e391a2d01" data-blockingmode="auto" type="text/javascript"></script>
+    <script type="text/javascript">
+        OV.StartWebsite ();
+    </script>
+
+</head>
+
 <body>
     <input type="file" id="open_file" style="display:none;" multiple></input>
     <div class="header" id="header">
