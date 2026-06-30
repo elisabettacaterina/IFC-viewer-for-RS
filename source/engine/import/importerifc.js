@@ -79,17 +79,7 @@ export class ImporterIfc extends ImporterBase
     ImportIfcMesh (modelID, ifcMesh)
     {
         let mesh = new Mesh ();
-        let meshName = null;
-        try {
-            const entity = this.ifc.GetLine (modelID, ifcMesh.expressID, true);
-            if (entity && entity.Name && entity.Name.value) {
-                meshName = this.GetIFCString (entity.Name.value);
-            }
-        } catch (e) {}
-        if (!meshName) {
-            meshName = FLoc ('Mesh {0}', ifcMesh.expressID.toString ());
-        }
-        mesh.SetName (meshName);
+        mesh.SetName (FLoc ('Mesh {0}', ifcMesh.expressID.toString ()));
 
         let vertexOffset = 0;
         const ifcGeometries = ifcMesh.geometries;
