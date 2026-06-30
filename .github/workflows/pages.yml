@@ -30,7 +30,7 @@ jobs:
           rm -rf _site
           mkdir -p _site/o3dv
           cp -r build/website/. _site/o3dv/
-          cp index.html arco.html _site/
+          cp index.html _site/
           cp -r assets _site/assets
           cp -r website _site/website
           touch _site/.nojekyll
