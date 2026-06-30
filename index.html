@@ -9,42 +9,28 @@
 
     <title>Online 3D Viewer</title>
 
-    <meta name="description" content="A free and open source web solution to visualize and explore 3D models right in your browser. Supported file formats: 3dm, 3ds, 3mf, amf, bim, brep, dae, fbx, fcstd, gltf, ifc, iges, step, stl, obj, off, ply, wrl.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Online 3D Viewer">
-    <meta property="og:description" content="A free and open source web solution to visualize and explore 3D models right in your browser. Supported file formats: 3dm, 3ds, 3mf, amf, bim, brep, dae, fbx, fcstd, gltf, ifc, iges, step, stl, obj, off, ply, wrl.">
-    <meta property="og:image" content="https://3dviewer.net/assets/images/3dviewer_net_logo_social.png">
-    <meta property="og:site_name" content="3dviewer.net">
-    <meta property="og:url" content="https://3dviewer.net">
+    <!-- meta start -->
+    <!-- meta end -->
 
-    <link rel="stylesheet" type="text/css" href="o3dv/o3dv.website.min.css?v=0.19.0">
-    <script type="text/javascript" src="o3dv/o3dv.website.min.js?v=0.19.0"></script>
-    <script type="text/javascript" src="plugins/headerbuttons.js?v=0.19.0"></script>
-    <script type="text/javascript" src="plugins/print3d.js?v=0.19.0"></script>
+    <!-- website start -->
+    <link rel="stylesheet" type="text/css" href="../build/website_dev/o3dv.website.min.css">
+    <script type="text/javascript" src="../build/website_dev/o3dv.website.min.js"></script>
+    <!-- website end -->
+    <!-- plugins start -->
+    <!-- plugins end -->
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZZ5ZTMBX5" type="text/javascript"></script>
+    <!-- website analytics start -->
     <script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-6ZZ5ZTMBX5');
-      OV.SetWebsiteEventHandler ((eventName, eventLabel, eventParams) => {
-        let params = {
-          event_label : eventLabel
-        };
-        if (eventParams !== undefined && eventParams !== null) {
-            for (let key in eventParams) {
-                if (Object.prototype.hasOwnProperty.call (eventParams, key)) {
-                    params[key] = eventParams[key];
-                }
-            }
-        }
-        gtag ('event', eventName, params);
-      });
+        OV.SetWebsiteEventHandler ((eventName, eventLabel, eventParams) => {
+            console.log ({
+                eventName : eventName,
+                eventLabel : eventLabel,
+                eventParams : eventParams
+            });
+        });
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2841513414125344"
-         crossorigin="anonymous"></script>
-<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a3946125-bdfb-48ac-85ee-8d0e391a2d01" data-blockingmode="auto" type="text/javascript"></script>
+    <!-- website analytics end -->
+
     <script type="text/javascript">
         OV.StartWebsite ();
     </script>
@@ -105,21 +91,8 @@
                     <a href="#model=assets/models/extrusion3.wrl">wrl</a>
                 </div>
             </div>
-            <div class="only_full_width" style="width:780px;margin-left:-140px;margin-top:50px;">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2841513414125344"
-                 crossorigin="anonymous"></script>
-            <!-- Intro footer ad -->
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:780px;height:100px"
-                 data-ad-client="ca-pub-2841513414125344"
-                 data-ad-slot="9668360357"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            </div>
-            <div class="only_full_width" style="margin-top:30px;">
-                <a href="https://3dconverter.net" target="_blank" style="color:#ffffff;background:linear-gradient(90deg, #B453BD, #1780B5);text-decoration:none;padding:8px 12px;border-radius:5px;">Try Online 3D Converter</a>
-            </div>
+            <!-- intro footer start -->
+            <!-- intro footer end -->
         </div>
     </div>
 </body>
